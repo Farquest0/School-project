@@ -84,11 +84,16 @@
             <input class="input" type="number" id="jambscore" pattern="^(18[0-9]|19[0-9]|[2-3][0-9]{2}|400)$" required title="Score must be betwen 180 to 400">
         </p>
         <p>
-            <input type="submit" value="Login" action="LOGIN.html">
+            <input type="submit" value="Login" action="LOGIN.html" onclick="goNext()">
         </p>
         <p>Please send any enquiry to the following email address</p>
         <a href="mailto:umarfarukmusa2007.my@gmail.com">umarfarukmusa2007.my@gmail.com</a>
         </fieldset>
     </form>
 </body>
+<script>
+function goNext() {
+    window.location.href = "dashboard.html";
+}
+</script>
 </html>
