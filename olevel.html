@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(photo-1620207418302-439b387441b0.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+    }
+    a{
+        text-decoration: none;
+        padding: 7px;
+        color: cyan;
+        text-shadow: 2px 2px 6px yellow, 0 0 15px yellowgreen;
+    }
+    @keyframes spin{
+        from { transform: rotate(0deg);}
+        to { transform: rotate(360deg);}
+    }
+    .logo{
+        width: 20%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: spin 2s linear;
+    }
+    .main{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #ffff;
+        text-shadow: 2px 2px 6px red, 0 0 15px orangered;
+        text-align: center;
+    }
+    .h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #ffff;
+        text-shadow: 2px 2px 6px red, 0 0 15px orangered;
+        text-align: center;
+    }
+    p,th{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #ffff;
+        text-shadow: 2px 2px 6px red, 0 0 15px orangered;
+    }
+    /* .p1{
+        padding-top: 0;
+        padding-right: 0;
+        /* position: absolute;
+        top: 0;
+        right: 0; 
+    } */
+    fieldset{
+        width: 60%;
+        height: 700px;
+        text-align: center;
+        margin-left: 19%;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 3px 3px 5px orangered, -3px -3px 5px red;
+    }
+    .div1{
+        width: min-content;
+    }
+    select{
+        width: 200px;
+        height: 25px;
+        border-radius: 5px;
+    }
+    option{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+    table,th{
+        width: 200px;
+        height: 25px;
+        table-layout: auto;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px red, 0 0 15px orangered;
+        margin-left: 25%;
+    }
+    .input{
+        width: 225px;
+        height: 25px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px red, 0 0 15px orangered;
+    }
+    #input{
+        width: 75px;
+        height: 25px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px orangered, 0 0 15px blue;
+    }
+</style>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="personaldetails.html">Personal Details</a>
+            </li>
+            <li>
+                <a href="payment.html">Payment</a>
+            </li>
+            <li>
+                <a href="olevel.html">Olevel</a>
+            </li>
+            <li>
+                <a href="">Results</a>
+            </li>
+        </ul>
+    </header>
+    <br>
+    <br>
+    <br>
+    <img src="file_0000000063e071f7b6ed544ece7f1fce.png" class="logo">
+    <h1 class="main">FARQUEST UNIVERSITY KADUNA STATE</h1>
+    <h2 class="h2">POST-UTME REGISTRATION</h2>
+    <form>
+        <fieldset>
+            <span class="div1">
+                <p>First Sitting</p>
+                <p>
+                    <label for="examtype">ExamType
+                        <br>
+                        <select>
+                            <option>Exam Type</option>
+                            <option>WAEC Internal</option>
+                            <option>WAEC External</option>
+                            <option>NECO Internal</option>
+                            <option>NECO External</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <span>
+                        <label for="registrationnumber">Regstration Number</label>
+                        <br>
+                        <input type="text" required class="input">
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <label for="schoolname">School Name</label>
+                        <br>
+                        <input type="text" required class="input">
+                    </span>
+                </p>
+                <table style="border:2px solid white;">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </span>
+            <br>
+            <input type="submit" value="Upload" id="input">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form>
+        <fieldset>
+            <span class="div1">
+                <p>Second Sitting</p>
+                <p>
+                    <label for="examtype">ExamType
+                        <br>
+                        <select>
+                            <option>Exam Type</option>
+                            <option>WAEC Internal</option>
+                            <option>WAEC External</option>
+                            <option>NECO Internal</option>
+                            <option>NECO External</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <span>
+                        <label for="registrationnumber">Regstration Number</label>
+                        <br>
+                        <input type="text" required class="input">
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <label for="schoolname">School Name</label>
+                        <br>
+                        <input type="text" required class="input">
+                    </span>
+                </p>
+                <table style="border:2px solid white;">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>Subject</option>
+                                <option>Agricultural Science</option>
+                                <option>Animal Husbandry</option>
+                                <option>Arabic</option>
+                                <option>Auto Mechanics</option>
+                                <option>Biology</option>
+                                <option>Building</option>
+                                <option>Book Keeping</option>
+                                <option>Construction</option>
+                                <option>Catering Craft Practice</option>
+                                <option>Chemistry</option>
+                                <option>Christian Religious Studies</option>
+                                <option>Civic Education</option>
+                                <option>Clothing and Textiles</option>
+                                <option>Commerce</option>
+                                <option>Computer Studies</option>
+                                <option>Data Processing</option>
+                                <option>Economics</option>
+                                <option>Edo</option>
+                                <option>Efik</option>
+                                <option>Electrical Installation and Maintenance</option>
+                                <option>Electronics</option>
+                                <option>English Language</option>
+                                <option>Financial Accounting</option>
+                                <option>Fisheries</option>
+                                <option>Food and Nutrition</option>
+                                <option>Forestry</option>
+                                <option>French</option>
+                                <option>Further Mathematics</option>
+                                <option>Fulfulde</option>
+                                <option>General Mathematics</option>
+                                <option>Geography</option>
+                                <option>Government</option>
+                                <option>Hausa</option>
+                                <option>Health Education</option>
+                                <option>History</option>
+                                <option>Home Management</option>
+                                <option>Igbo</option>
+                                <option>Insurance</option>
+                                <option>Islamic Studies</option>
+                                <option>Literature in English</option>
+                                <option>Marketing</option>
+                                <option>Mathematics</option>
+                                <option>Metalwork</option>
+                                <option>Music</option>
+                                <option>Office Practice</option>
+                                <option>Physical Education</option>
+                                <option>Physics</option>
+                                <option>Salesmanship</option>
+                                <option>ShorthandStore</option>
+                                <option>Management</option>
+                                <option>Technical Drawing</option>
+                                <option>Tourism</option>
+                                <option>Typewriting</option>
+                                <option>Woodwork</option>
+                                <option>Yoruba</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>A/R</option>
+                                <option>A1</option>
+                                <option>B2</option>
+                                <option>B3</option>
+                                <option>C4</option>
+                                <option>C5</option>
+                                <option>C6</option>
+                                <option>D7</option>
+                                <option>E8</option>
+                                <option>F9</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </span>
+            <br>
+            <input type="submit" value="Upload" id="input">
+        </fieldset>
+    </form>
+</body>
+</html>

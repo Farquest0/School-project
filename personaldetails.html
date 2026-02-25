@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(photo-1620207418302-439b387441b0.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+    }
+    a{
+        text-decoration: none;
+        padding: 7px;
+        color: cyan;
+        text-shadow: 2px 2px 6px yellow, 0 0 15px yellowgreen;
+    }
+    @keyframes spin{
+        from { transform: rotate(0deg);}
+        to { transform: rotate(360deg);}
+    }
+    .logo{
+        width: 20%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: spin 2s linear;
+    }
+    .main{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #ffff;
+        text-shadow: 2px 2px 6px red, 0 0 15px orangered;
+        text-align: center;
+    }
+    .h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #ffff;
+        text-shadow: 2px 2px 6px red, 0 0 15px orangered;
+        text-align: center;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #ffff;
+        text-shadow: 2px 2px 6px red, 0 0 15px orangered;
+    }
+    /* .p1{
+        padding-top: 0;
+        padding-right: 0;
+        /* position: absolute;
+        top: 0;
+        right: 0; 
+    } */
+    fieldset{
+        width: 60%;
+        height: 700px;
+        text-align: center;
+        margin-left: 19%;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .input{
+        width: 225px;
+        height: 25px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px red, 0 0 15px orangered;
+    }
+    #input{
+        width: 75px;
+        height: 25px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px orangered, 0 0 15px blue;
+    }
+    .select{
+        width: 200px;
+        height: 25px;
+        border-radius: 5px;
+    }
+    option{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+    .date{
+        width: 200px;
+        height: 25px;
+        border-radius: 5px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    .name{
+        display: flex;
+        justify-content: space-evenly;
+    }
+</style>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="personaldetails.html">Personal Details</a>
+            </li>
+            <li>
+                <a href="payment.html">Payment</a>
+            </li>
+            <li>
+                <a href="olevel.html">Olevel</a>
+            </li>
+            <li>
+                <a href="">Results</a>
+            </li>
+        </ul>
+    </header>
+    <br>
+    <br>
+    <br>
+    <img src="file_0000000063e071f7b6ed544ece7f1fce.png" class="logo">
+    <h1 class="main">FARQUEST UNIVERSITY KADUNA STATE</h1>
+    <h2 class="h2">POST-UTME REGISTRATION</h2>
+    <form>
+        <fieldset>
+            <main>
+                <!-- <p class="p1">
+                    <label for="passport">Passport</label>
+                    <input type="file" required id="file">
+                </p> -->
+                <h3 class="h2">Personal Details</h3>
+            </main>
+            <br>
+            <p class="name">
+                <span>
+                    <label for="firstname">FirstName</label>
+                    <br>
+                    <input class="input" type="text" id="firstname" required>
+                </span>
+                <span>
+                    <label for="surname">Surname</label>
+                    <br>
+                    <input class="input" type="text" id="surname" required>
+                </span>
+            </p>
+            <br>
+            <p class="name">
+                <span>
+                    <label for="phonenumber">Phone Number</label>
+                    <br>
+                    <input class="input" type="tel" id="phonenumber" required pattern="[0-9]{11}">
+                </span>
+                <span>
+                    <label for="email">Email</label>
+                    <br>
+                    <input class="input" type="email" id="email" required>
+                </span>
+            </p>
+            <br>
+            <p class="name">
+                <span>
+                    <label for="dateofbirth">Date of Birth</label>
+                    <br>
+                    <input class="date" type="date" required>
+                </span>
+                <span>
+                    <label for="stateoforigin">State of Origin
+                        <br>
+                        <select class="select" id="states">
+                            <option>State</option>
+                            <option>Abia</option>
+                            <option>Abuja</option>
+                            <option>Adawama</option>
+                            <option>Akwa-Ibom</option>
+                            <option>Anambra</option>
+                            <option>Bauchi</option>
+                            <option>Bayelsa</option>
+                            <option>Benue</option>
+                            <option>Borno</option>
+                            <option>Cross-Rivers</option>
+                            <option>Delta</option>
+                            <option>Eboniyi</option>
+                            <option>Edo</option>
+                            <option>Ekiti</option>
+                            <option>Enugu</option>
+                            <option>Gombe</option>
+                            <option>Imo</option>
+                            <option>Jigawa</option>
+                            <option>Kaduna</option>
+                            <option>Kano</option>
+                            <option>Kastina</option>
+                            <option>Kebbi</option>
+                            <option>Kogi</option>
+                            <option>Kwara</option>
+                            <option>Lagos</option>
+                            <option>Nasarawa</option>
+                            <option>Niger</option>
+                            <option>Ogun</option>
+                            <option>Ondo</option>
+                            <option>Osun</option>
+                            <option>Oyo</option>
+                            <option>Plateau</option>
+                            <option>Rivers</option>
+                            <option>Sokoto</option>
+                            <option>Taraba</option>
+                            <option>Yobe</option>
+                            <option>Zamfara</option>
+                        </select>
+                    </label>
+                </span>
+            </p>
+            <br>
+            <p class="name">  
+                <span> 
+                    <label for="faculty">Faculty
+                        <br>
+                        <select id="faculty" class="select">
+                            <option>Faculty</option>
+                            <option>Arts and islamic studies</option>
+                            <option>Agriculture</option>
+                            <option>Allied health sciences</option>
+                            <option>Basic medical sciences</option>
+                            <option>Agricultural Science</option>
+                            <option>Clinical sciences</option>
+                            <option>Communication</option>
+                            <option>Computing</option>
+                            <option>Dentistry</option>
+                            <option>Earth and environmental science</option>
+                            <option>Education</option>
+                            <option>Engineering</option>
+                            <option>Law</option>
+                            <option>Life science</option>
+                            <option>Pharmaceutical science</option>
+                            <option>Physical sciences</option>
+                            <option>Economics and managemental sciences</option>
+                        <option>Social sciences</option>
+                            <option>Vertinary medicine</option>
+                        </select>
+                    </label>
+                </span>
+                <span>
+                    <label for="department">Department
+                        <br>
+                        <select id="department" class="select">
+                            <option>Department</option>
+                            <option>Accounting</option>
+                            <option>Adult education</option>
+                            <option>Agriculture</option>
+                            <option>Agricultural engineering</option>
+                            <option>Anatomy</option>
+                            <option>Applied biology</option>
+                            <option>Arabic</option>
+                            <option>Architecture</option>
+                            <option>Automotive engineering</option>
+                            <option>Biochemistry</option>
+                            <option>Biology</option>
+                            <option>Botany</option>
+                            <option>Bussiness admistration</option>
+                            <option>Chemical engineering</option>
+                            <option>Chemistry</option>
+                            <option>Civil engineering</option>
+                            <option>Computer engineering</option>
+                            <option>Computer science</option>
+                            <option>Criminology</option>
+                            <option>Cybersecurity</option>
+                            <option>Dentistry</option>
+                            <option>Doctor of optometry</option>
+                            <option>Early childhood education</option>
+                            <option>Economics</option>
+                            <option>Education</option>
+                            <option>Electrical engineering</option>
+                            <option>Electronics with physics</option>
+                            <option>English</option>
+                            <option>Enterpreneurhip</option>
+                            <option>Environmental management</option>
+                            <option>Environmental science</option>
+                            <option>Estate management</option>
+                            <option>Finance</option>
+                            <option>Fishery and aquaculture</option>
+                            <option>Food science and technology</option>
+                            <option>Forensic science</option>
+                            <option>Forestry and wildlife management</option>
+                            <option>French</option>
+                            <option>Geography</option>
+                            <option>Geology</option>
+                            <option>Hausa</option>
+                            <option>Health</option>
+                            <option>History</option>
+                            <option>Inudstrial chesmitry</option>
+                            <option>Information and media studies</option>
+                            <option>Information technology</option>
+                            <option>International relation</option>
+                            <option>Islamic and commom law</option>
+                            <option>Islamic studies</option>
+                            <option>Library and information science</option>
+                            <option>Linguistics</option>
+                            <option>Mathematics</option>
+                            <option>Mass communication</option>
+                            <option>Mbbs</option>
+                            <option>Mecatronics engineering</option>
+                            <option>Mechanical engineering</option>
+                            <option>Medical labatory science</option>
+                            <option>Metereology</option>
+                            <option>Microbiology</option>
+                            <option>Nursing</option>
+                            <option>Nutrition and dieteties</option>
+                            <option>Petroleum engineering</option>
+                            <option>Pharmacy</option>
+                            <option>Physical education</option>
+                            <option>Physics</option>
+                            <option>Physiology</option>
+                            <option>Physiotheraphy</option>
+                            <option>Political science</option>
+                            <option>Primary education</option>
+                            <option>Public administration</option>
+                            <option>Quantity surveying</option>
+                            <option>Radiography</option>
+                            <option>Shariah</option>
+                            <option>Sociology</option>
+                            <option>Software engineering</option>
+                            <option>Special education</option>
+                            <option>Statistics</option>
+                            <option>Technology education</option>
+                            <option>Telecommunication engineering</option>
+                            <option>Theatre and perfroming art</option>
+                            <option>Taxation</option>
+                            <option>Urban and regional planning</option>
+                            <option>Vertinary medicine</option>
+                            <option>Zoology</option>
+                        </select>
+                    </label>
+                </span>
+            </p>
+            <br>
+            <p>
+                <input type="submit" value="Update" id="input">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
